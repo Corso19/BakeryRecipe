@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MelangeProject.Views.MainPage"
+             Shell.NavBarIsVisible="False">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Image
+                Source="melange_logo.jpeg"
+                HeightRequest="250"
+                Aspect="AspectFit"
+         />
+
+            <Label
+                Text="Rețetar Melange"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <Label
+                Text="Selectează sectorul"
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level2" />
+
+            <Button
+                x:Name="BreadButton"
+                Text="Panificație"
+                FontSize="Large"
+                />
+            <Button
+                x:Name="PastryButton"
+                Text="Patiserie"
+                FontSize="Large"
+                />
+            <Button
+                x:Name="SpecialtiesButton"
+                Text="Specialități"
+                FontSize="Large"
+                />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
